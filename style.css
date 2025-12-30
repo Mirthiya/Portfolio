@@ -1,0 +1,268 @@
+/* =======================
+   GLOBAL STYLES
+======================= */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #eef1f5;
+  color: #2c2c2c;
+}
+
+/* =======================
+   MAIN LAYOUT
+======================= */
+.main {
+  display: flex;
+  width: 90%;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* =======================
+   LEFT PANEL
+======================= */
+.left {
+  width: 30%;
+  background-color: #1f2933;
+  color: #ffffff;
+  padding: 30px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.left h1 {
+  font-size: 26px;
+  margin: 10px 0 5px;
+}
+
+.left h3 {
+  font-weight: normal;
+  color: #cbd5e1;
+  margin-bottom: 10px;
+}
+
+.contact {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =======================
+   SOCIAL ICONS + HOVER
+======================= */
+.social-links {
+  display: flex;
+  gap: 16px;
+  margin: 15px 0;
+}
+
+.social-links a {
+  display: inline-block;
+}
+
+.social-links img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  filter: invert(1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.15);
+  filter: invert(1) drop-shadow(0 0 6px rgba(255,255,255,0.6));
+}
+
+/* =======================
+   RESUME BUTTON + HOVER
+======================= */
+.resume-btn {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 10px 15px;
+  background-color: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+}
+
+/* =======================
+   SKILLS HEADINGS
+======================= */
+.left h2 {
+  margin-top: 25px;
+  font-size: 18px;
+  border-bottom: 1px solid #475569;
+  padding-bottom: 5px;
+}
+
+/* =======================
+   RIGHT PANEL
+======================= */
+.right {
+  width: 70%;
+  padding: 40px;
+}
+
+.section {
+  margin-bottom: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.section:hover {
+  background-color: rgba(249, 250, 251, 0.6);
+}
+
+.section h2 {
+  color: #1f2933;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 5px;
+}
+
+/* =======================
+   PROJECT CARDS + HOVER
+======================= */
+.project {
+  background-color: #f8fafc;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.project a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+/* =======================
+   CONTACT FORM + HOVER
+======================= */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.contact-form button {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+}
+
+/* =======================
+   SCROLL ANIMATION
+======================= */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =======================
+   FOOTER
+======================= */
+footer {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* =======================
+   MOBILE RESPONSIVE
+======================= */
+@media (max-width: 768px) {
+
+  .main {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .left {
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+/* EXPERIENCE BLOCK */
+.experience {
+  padding-left: 15px;
+  border-left: 3px solid #2563eb;
+  margin-bottom: 25px;
+}
+
+.experience h4 {
+  margin-bottom: 4px;
+}
+
+.duration {
+  font-size: 13px;
+  color: #6b7280;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* PROJECT LINK ANIMATION */
+.project a {
+  display: inline-block;
+  margin-top: 8px;
+  transition: transform 0.3s ease;
+}
+
+.project a:hover {
+  transform: translateX(5px);
+}
