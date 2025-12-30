@@ -28,4 +28,26 @@ https://mithiya.github.io/Portfolio/
 ---
 
 ## 📂 Project Structure
+├── index.html
+├── style.css
+├── script.js
+├── profile.jpg
+└── resume.pdf
+
+---
+
+## 🚀 Deployment
+
+The website is deployed using **GitHub Pages** and served over HTTPS.
+
+---
+
+## 📬 Contact
+
+📧 Email: ragavanmirthiya@gmail.com  
+🔗 LinkedIn: https://www.linkedin.com/in/mirthiya-vijayaragavan-8b2b30319  
+
+---
+
+⭐ If you like this project, feel free to star the repository!
 
